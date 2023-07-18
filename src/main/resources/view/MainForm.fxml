@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.BoxBlur?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="pane" prefHeight="678.0" prefWidth="415.0" style="-fx-background-color: #FAFAFA; -fx-background-radius: 15; -fx-border-radius: 15;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.chatapplication.controller.MainFormController">
+    <children>
+      <ImageView fx:id="rocketImage1" fitHeight="678.0" fitWidth="418.0" pickOnBounds="true">
+         <image>
+            <Image url="@../../../../../Icons/desktop-wallpaper-message-background-whatsapp-message-background.jpg" />
+         </image>
+      </ImageView>
+        <Label layoutX="110.0" layoutY="58.0" prefHeight="116.0" prefWidth="212.0" text="    Chat  App">
+            <font>
+                <Font name="System Bold" size="32.0" />
+            </font>
+        </Label>
+      <AnchorPane layoutY="269.0" prefHeight="409.0" prefWidth="418.0">
+         <children>
+              <JFXButton fx:id="btnStart" layoutX="102.0" layoutY="256.0" onAction="#btnStartOnAction" prefHeight="50.0" prefWidth="212.0" style="-fx-background-color: white; -fx-background-radius: 10; -fx-border-color: #780483; -fx-border-radius: 10;" text="Start" textFill="#3f164d">
+                  <font>
+                      <Font size="18.0" />
+                  </font>
+               <effect>
+                  <BoxBlur />
+               </effect>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+              </JFXButton>
+            <Label layoutX="112.0" layoutY="395.0" prefHeight="14.0" prefWidth="178.0" style="-fx-background-radius: 5;" textAlignment="CENTER" textFill="WHITE" textOverrun="WORD_ELLIPSIS">
+               <font>
+                  <Font size="9.0" />
+               </font>
+            </Label>
+              <ImageView fx:id="rocketImage" fitHeight="279.0" fitWidth="295.0" layoutX="54.0" layoutY="-72.0" pickOnBounds="true" preserveRatio="true">
+                  <image>
+                      <Image url="@../../../../../Icons/dribbble-mock-unscreen.gif" />
+                  </image>
+              </ImageView>
+            <Label layoutX="128.0" layoutY="-98.0" prefHeight="64.0" prefWidth="212.0" text="Welcome ....">
+               <font>
+                  <Font name="System Bold" size="32.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+    </children>
+</AnchorPane>

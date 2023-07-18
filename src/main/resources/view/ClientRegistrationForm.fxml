@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="pane" prefHeight="496.0" prefWidth="353.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.chatapplication.controller.ClientRegistrationFormController">
+    <children>
+        <TextField fx:id="txtName" layoutX="9.0" layoutY="212.0" onAction="#txtNameOnAction" prefHeight="48.0" prefWidth="333.0" promptText="Name" />
+        <JFXButton fx:id="btnRegister" layoutX="101.0" layoutY="287.0" onAction="#btnRegisterOnAction" prefHeight="54.0" prefWidth="151.0" style="-fx-background-color: red; -fx-background-radius: 20;" text="Join" textFill="WHITE">
+            <font>
+                <Font size="17.0" />
+            </font>
+            <cursor>
+                <Cursor fx:constant="HAND" />
+            </cursor>
+        </JFXButton>
+        <Label layoutX="120.0" layoutY="34.0" prefHeight="50.0" prefWidth="141.0" text="Register">
+            <font>
+                <Font name="System Bold" size="34.0" />
+            </font>
+        </Label>
+    </children>
+</AnchorPane>
